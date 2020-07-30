@@ -1,9 +1,49 @@
 html {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
 }
 
-.accordion * {
+body {
+    padding: 2rem;
+}
+
+h1 {
+    color: slateblue;
+}
+
+.accordion {
     display: flex;
+    flex-wrap: wrap;
+    width: 64rem;
+}
+
+.accordion * {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.accordion label {
+    font-size: 1.2rem;
+    width: 100%;
     margin-top: 1rem;
+}
+
+.accordion input {
+    margin: 0;
+    width: 50%;
+}
+
+.accordion button {
+    margin-top: 1rem;
+}
+
+.accordion textarea {
+    height: 16rem;
+    width: 100%;
+}
+
+.input-hint {
+    color: dimgray;
+    margin: 0;
 }

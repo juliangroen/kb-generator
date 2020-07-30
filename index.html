@@ -10,21 +10,30 @@
         <div class="container">
             <h1>Generate HTML for a KB Accordion</h1>
             <form action="submit" class="accordion">
-                <label for="acc-id"
-                    >Accordion ID: <br />(no spaces, no special characters, use
-                    kebab-case i.e. id-name-here)</label
-                >
-                <input type="text" name="acc-id" id="acc-id" />
-
+                <label for="acc-id">Accordion ID:</label>
+                <input
+                    type="text"
+                    name="acc-id"
+                    placeholder="id-name-here"
+                    id="acc-id"
+                />
+                <span class="input-hint">
+                    (no spaces, no special characters, use kebab-case i.e.
+                    id-name-here)
+                </span>
                 <label for="acc-title">Accordion Title:</label>
-                <input type="text" name="acc-title" id="acc-title" />
+                <input
+                    type="text"
+                    name="acc-title"
+                    placeholder="Enter title here."
+                    id="acc-title"
+                />
 
                 <label for="acc-body">Accordion Body:</label>
                 <textarea
                     name="acc-body"
+                    placeholder="Enter body content here."
                     id="acc-body"
-                    cols="128"
-                    rows="16"
                 ></textarea>
 
                 <button type="submit">Generate</button>
@@ -33,8 +42,6 @@
                 <textarea
                     name="html-output"
                     id="html-output"
-                    cols="128"
-                    rows="16"
                     readonly
                 ></textarea>
 
