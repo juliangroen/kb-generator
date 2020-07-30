@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KB Generator</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate HTML for a KB Accordion</h1>
+            <form action="submit" class="accordion">
+                <label for="acc-id"
+                    >Accordion ID: <br />(no spaces, no special characters, use
+                    kebab-case i.e. id-name-here)</label
+                >
+                <input type="text" name="acc-id" id="acc-id" />
+
+                <label for="acc-title">Accordion Title:</label>
+                <input type="text" name="acc-title" id="acc-title" />
+
+                <label for="acc-body">Accordion Body:</label>
+                <textarea
+                    name="acc-body"
+                    id="acc-body"
+                    cols="128"
+                    rows="16"
+                ></textarea>
+
+                <button type="submit">Generate</button>
+
+                <label for="html-output">HTML Output:</label>
+                <textarea
+                    name="html-output"
+                    id="html-output"
+                    cols="128"
+                    rows="16"
+                    readonly
+                ></textarea>
+
+                <button type="reset">Clear All Fields</button>
+            </form>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

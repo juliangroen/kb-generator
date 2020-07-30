@@ -1,0 +1,9 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.accordion * {
+    display: flex;
+    margin-top: 1rem;
+}
